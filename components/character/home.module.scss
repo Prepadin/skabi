@@ -1,0 +1,58 @@
+.para {
+    display: flex;
+
+}
+
+.grid {
+    display: grid;
+}
+
+.images {
+    justify-content: center;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.images1 {
+    justify-content: center;
+    position: relative;
+    margin-top: -50vh;
+}
+
+.paragraph {
+    color: #2d2d2d;
+    font-size: 60px;
+    max-width: 1280px;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+
+
+    @media screen and (min-width: 300px) and (max-width: 900px) {
+        font-size: 45px;
+        max-width: 1280px;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+
+    }
+
+}
+
+
+
+
+.word {
+    margin-right: 12px;
+    margin-top: 12px;
+    position: relative;
+    //color: rgb(131, 0, 13);
+
+}
+
+.shadow {
+    position: absolute;
+    opacity: 0.1;
+}
