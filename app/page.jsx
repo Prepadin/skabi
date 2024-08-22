@@ -6,8 +6,6 @@ import Character from "components/character";
 import Scrollvideo from "components/scrollvideo";
 import Footer from "components/footer";
 import Velocity from "components/velocity";
-import { HorizontalScroll } from "components/HorizontalScroll";
-import { HorizontalScrolll } from "components/HorizontalScrolll";
 import { HorizontalScrollll } from "components/HorizontalScrollll";
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
@@ -38,17 +36,17 @@ const paragraph = "Škabrijel is a hill north-east of the town of Nova Gorica. S
 
 export default function page() {
 
-  const firstText = useRef(null);
-  const secondText = useRef(null);
+  // const firstText = useRef(null);
+  // const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
 
-  const container = useRef();
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start start", "end end"]
-  })
+  // const container = useRef();
+  // const { scrollYProgress } = useScroll({
+  //   target: container,
+  //   offset: ["start start", "end end"]
+  // })
 
   useEffect(() => {
     const lenis = new Lenis()
@@ -62,33 +60,33 @@ export default function page() {
   }, [])
 
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.25,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: e => direction = e.direction * -1
-      },
-      x: "2000px",
-    })
-    requestAnimationFrame(animate);
-  }, [])
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.to(slider.current, {
+  //     scrollTrigger: {
+  //       trigger: document.documentElement,
+  //       scrub: 0.25,
+  //       start: 0,
+  //       end: window.innerHeight,
+  //       onUpdate: e => direction = e.direction * -1
+  //     },
+  //     x: "2000px",
+  //   })
+  //   requestAnimationFrame(animate);
+  // }, [])
 
-  const animate = () => {
-    if (xPercent < -160) {
-      xPercent = 0;
-    }
-    else if (xPercent > 0) {
-      xPercent = -160;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent })
-    gsap.set(secondText.current, { xPercent: xPercent })
-    requestAnimationFrame(animate);
-    xPercent += 0.11 * direction;
-  }
+  // const animate = () => {
+  //   if (xPercent < -160) {
+  //     xPercent = 0;
+  //   }
+  //   else if (xPercent > 0) {
+  //     xPercent = -160;
+  //   }
+  //   gsap.set(firstText.current, { xPercent: xPercent })
+  //   gsap.set(secondText.current, { xPercent: xPercent })
+  //   requestAnimationFrame(animate);
+  //   xPercent += 0.11 * direction;
+  // }
 
 
   return (
