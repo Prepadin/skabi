@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.top}>
-        <p className="font-semibold uppercase text-neutral-500  text-9xl font-serif text-slate-300 mx-16 text-[#808080] my-28">
+        <p className="font-semibold uppercase text-neutral-500  text-9xl font-serif  mx-16 text-[#808080] my-28">
           Škabrijel <br />
           <span className="contrast font-serif">hill in Nova Gorica</span>
         </p>

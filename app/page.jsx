@@ -38,9 +38,9 @@ export default function page() {
 
   // const firstText = useRef(null);
   // const secondText = useRef(null);
-  const slider = useRef(null);
-  let xPercent = 0;
-  let direction = -1;
+  // const slider = useRef(null);
+  // let xPercent = 0;
+  // let direction = -1;
 
   // const container = useRef();
   // const { scrollYProgress } = useScroll({
@@ -99,15 +99,15 @@ export default function page() {
         <Velocity />
       </div >
       <div className={s.sliderContainer}>
-        <div ref={slider} className=" font-semibold uppercase text-neutral-500  text-7xl font-serif text-slate-300 mx-16 text-[#2d2d2d]">
-          {/* <p ref={firstText}>ŠKABRIJEL 646 METRES HILL IN NOVA GORICA.</p> */}
+        {/* <div ref={slider} className=" font-semibold uppercase text-neutral-500  text-7xl font-serif text-slate-300 mx-16 text-[#2d2d2d]"> */}
+        {/* <p ref={firstText}>ŠKABRIJEL 646 METRES HILL IN NOVA GORICA.</p> */}
 
-          {/* <p ref={secondText}> Škabrijel 646 metres hill in Nova Gorica.</p> */}
-        </div>
-        <div>
-
-        </div>
+        {/* <p ref={secondText}> Škabrijel 646 metres hill in Nova Gorica.</p> */}
       </div>
+      <div>
+
+      </div>
+      {/* </div> */}
 
 
 
