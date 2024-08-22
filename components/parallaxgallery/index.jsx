@@ -2,7 +2,7 @@
 import s from "./page.module.scss"
 import Image from 'next/image';
 import { useTransform, useScroll, motion } from "framer-motion"
-import { useRef, useEffect, useState } from "react"
+import { UseRef, useEffect, useState } from "react"
 import Lenis from '@studio-freight/lenis'
 
 
@@ -22,9 +22,9 @@ const images = [
 ]
 
 export default function parallaxgallery() {
-    const gallery = useRef(null);
+    const gallery = UseRef(null);
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
-    const container = useRef(null);
+    const container = UseRef(null);
     const { scrollYProgress } = useScroll({
         target: gallery,
         offset: ['start end', 'end start']
