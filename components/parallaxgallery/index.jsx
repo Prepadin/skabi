@@ -2,7 +2,7 @@
 import s from "./page.module.scss"
 import Image from 'next/image';
 import { useTransform, useScroll, motion } from "framer-motion"
-import { UseRef, useEffect, useState } from "react"
+import { useRef as UseRef, useEffect, useState } from "react"
 import Lenis from '@studio-freight/lenis'
 
 
