@@ -2,7 +2,7 @@
 
 import * as THREE from 'three'
 import React, { Suspense, useEffect, useState, useRef, useLayoutEffect } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Reflector, Text, useTexture, MeshReflectorMaterial, Environment, OrbitControls, CameraControls, RenderTexture, Float, useFont, useGLTF } from '@react-three/drei'
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { degToRad, lerp } from "three/src/math/MathUtils";
@@ -31,10 +31,10 @@ export default function Hero() {
     return (
 
         // <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
-        <Canvas id="myCanvas" width="100" height="100" shadows camera={{ position: [0, 0, 8], fov: 40 }}>
+        <Canvas id="myCanvas" width="100" height="100" shadows camera={{ position: [0, 0, 8], fov: 100 }}>
             <color attach="background" args={["#171720"]} />
             <fog attach="fog" args={["#171720", 10, 30]} />
-            {/* <CameraControls ref={controls} dolly={false} /> */}
+            <CameraControls ref={controls} enabled={false} />
             {/* <mesh ref={meshFitCameraHome} position-z={1.5} visible={false}>
         <boxGeometry args={[7.5, 2, 2]} />
         <meshBasicMaterial color="orange" transparent opacity={0.5} />
@@ -84,15 +84,16 @@ export default function Hero() {
 function VideoText(props) {
     const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/skab1.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
     useEffect(() => void video.play(), [video])
+    const { viewport } = useThree();
     return (
         <>
             <Text
                 font="/Inter-Bold.woff"
-                fontSize={1.5}
+                fontSize={viewport.width / 9}
                 letterSpacing={-0.04}
                 {...props}
-                position-x={1}
-                position-y={-0.03}
+                position-x={3}
+                position-y={-0.2}
                 position-z={0}
                 lineHeight={0.8}
                 textAlign="center"
