@@ -85,26 +85,31 @@ function VideoText(props) {
     const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/skab1.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
     useEffect(() => void video.play(), [video])
     const { viewport } = useThree();
+    const ScalingFactor = Math.max(window.innerWidth / 1300, 0.5);
+    console.log(ScalingFactor)
     return (
         <>
-            <Text
-                font="/Inter-Bold.woff"
-                fontSize={viewport.width / 9}
-                letterSpacing={-0.04}
-                {...props}
-                position-x={3}
-                position-y={-0.2}
-                position-z={0}
-                lineHeight={0.8}
-                textAlign="center"
-                rotation-y={degToRad(25)}
-                anchorY={"bottom"}
-            >
-                ŠKABRIJEL
-                < meshBasicMaterial toneMapped={false} >
-                    <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
-                </meshBasicMaterial >
-            </Text >
+            <group scale={ScalingFactor}>
+                <Text
+                    font="/Inter-Bold.woff"
+                    fontSize={3}
+                    letterSpacing={-0.04}
+                    {...props}
+                    position-x={1.5}
+                    position-y={-0.3}
+                    position-z={0}
+                    lineHeight={0.8}
+                    textAlign="center"
+                    rotation-y={degToRad(15)}
+                    anchorY={"bottom"}
+
+                >
+                    ŠKABRIJEL
+                    < meshBasicMaterial toneMapped={false} >
+                        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+                    </meshBasicMaterial >
+                </Text >
+            </group>
             <mesh position-y={-0.20} rotation-x={-Math.PI / 2}>
                 <planeGeometry args={[100, 100]} />
                 <MeshReflectorMaterial
@@ -122,6 +127,7 @@ function VideoText(props) {
                     metalness={0.5}
                 />
             </mesh>
+
         </>
     )
 }
