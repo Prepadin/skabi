@@ -34,7 +34,7 @@ export default function Hero() {
         <Canvas id="myCanvas" width="100" height="100" shadows camera={{ position: [0, 0, 8], fov: 40 }}>
             <color attach="background" args={["#171720"]} />
             <fog attach="fog" args={["#171720", 10, 30]} />
-            <CameraControls ref={controls} />
+            {/* <CameraControls ref={controls} dolly={false} /> */}
             {/* <mesh ref={meshFitCameraHome} position-z={1.5} visible={false}>
         <boxGeometry args={[7.5, 2, 2]} />
         <meshBasicMaterial color="orange" transparent opacity={0.5} />
