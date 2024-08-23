@@ -7,7 +7,7 @@ import Scrollvideo from "components/scrollvideo";
 import Footer from "components/footer";
 import Velocity from "components/velocity";
 import { HorizontalScrollll } from "components/HorizontalScrollll";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect as UseEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import Image from "next/image";
@@ -48,7 +48,7 @@ export default function page() {
   //   offset: ["start start", "end end"]
   // })
 
-  useEffect(() => {
+  UseEffect(() => {
     const lenis = new Lenis()
 
     function raf(time) {
