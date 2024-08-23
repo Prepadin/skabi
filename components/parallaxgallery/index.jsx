@@ -1,8 +1,8 @@
 "use client"
 import s from "./page.module.scss"
 import Image from 'next/image';
-import { useTransform, useScroll, motion } from "framer-motion"
-import { useRef as UseRef, useEffect, useState } from "react"
+import { useTransform as UseTransform, useScroll as UseScroll, motion } from "framer-motion"
+import { useRef as UseRef, useEffect as UseEffect, useState as UseState } from "react"
 import Lenis from '@studio-freight/lenis'
 
 
@@ -23,19 +23,19 @@ const images = [
 
 export default function parallaxgallery() {
     const gallery = UseRef(null);
-    const [dimension, setDimension] = useState({ width: 0, height: 0 });
+    const [dimension, setDimension] = UseState({ width: 0, height: 0 });
     const container = UseRef(null);
-    const { scrollYProgress } = useScroll({
+    const { scrollYProgress } = UseScroll({
         target: gallery,
         offset: ['start end', 'end start']
     })
     const { height } = dimension;
-    const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
-    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
-    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
+    const y = UseTransform(scrollYProgress, [0, 1], [0, height * 2])
+    const y2 = UseTransform(scrollYProgress, [0, 1], [0, height * 3.3])
+    const y3 = UseTransform(scrollYProgress, [0, 1], [0, height * 1.25])
+    const y4 = UseTransform(scrollYProgress, [0, 1], [0, height * 3])
 
-    useEffect(() => {
+    UseEffect(() => {
         const lenis = new Lenis()
 
         const raf = (time) => {
