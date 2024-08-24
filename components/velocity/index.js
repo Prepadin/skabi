@@ -58,8 +58,8 @@ function ParallaxText({ children, baseVelocity = 200 }) {
      */
     return (
         <div className={s.parallax}>
-            <motion.div className="text-9xl w-max font-semibold uppercase  font-serif  text-[#808080]" style={{ x }} >
-                <span>{children} </span>
+            <motion.div className=" xl:text-9xl text-5xl w-max  font-semibold uppercase  font-serif  text-[#808080]" style={{ x }} >
+                <span >{children} </span>
                 {/* <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span> */}
@@ -70,7 +70,7 @@ function ParallaxText({ children, baseVelocity = 200 }) {
 
 export default function velocity() {
     return (
-        <section>
+        <section className={s.section}>
             <ParallaxText baseVelocity={-5}>ŠKABRIJEL 646 METRES HILL </ParallaxText>
             <ParallaxText baseVelocity={5}>IN NOVA GORICA </ParallaxText>
         </section>

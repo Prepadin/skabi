@@ -1,5 +1,6 @@
 .gallery {
     height: 175vh;
+
     background: rgb(45, 45, 45);
     position: relative;
     display: flex;
@@ -49,4 +50,28 @@
 
 .spacer {
     height: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        position: relative;
+        height: 100%;
+        width: 50%;
+        min-width: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .gallery {
+        height: 175vh;
+        width: 200vw;
+        background: rgb(45, 45, 45);
+        position: relative;
+        display: flex;
+        gap: 2vw;
+        padding: 2vw;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
 }

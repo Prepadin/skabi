@@ -97,8 +97,9 @@ export default function page() {
       <Gallery />
       <div >
         <Velocity />
+        <div style={{ height: "50vh" }}></div>
       </div >
-      <div className={s.sliderContainer}>
+      <div >
         {/* <div ref={slider} className=" font-semibold uppercase text-neutral-500  text-7xl font-serif text-slate-300 mx-16 text-[#2d2d2d]"> */}
         {/* <p ref={firstText}>ŠKABRIJEL 646 METRES HILL IN NOVA GORICA.</p> */}
 

@@ -86,7 +86,7 @@ function VideoText(props) {
     useEffect(() => void video.play(), [video])
     const { viewport } = useThree();
     const ScalingFactor = Math.max(window.innerWidth / 1300, 0.5);
-    console.log(ScalingFactor)
+
     return (
         <>
             <group scale={ScalingFactor}>
