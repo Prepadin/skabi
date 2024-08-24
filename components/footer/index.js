@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.top}>
-        <p className="font-semibold uppercase  text-9xl font-serif  mx-16 text-[#808080] my-28">
+        <p className="font-semibold uppercase xl:text-9xl text-5xl font-serif  mx-16 text-[#808080] my-28">
           Škabrijel <br />
-          <span className="contrast font-serif">hill in Nova Gorica</span>
+          <span className="contrast font-serif xl:text-9xl text-5xl">hill in Nova Gorica</span>
         </p>
         <div className={s['shameless-plug']}>
           {/* <p className="h4">Prepad</p> */}

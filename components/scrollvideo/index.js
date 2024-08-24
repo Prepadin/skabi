@@ -22,7 +22,7 @@ const VideoScroll = () => {
     const { scrollYProgress } = useScroll();
 
     // Map scroll progress to the video duration
-    const videoTime = useTransform(scrollYProgress, [0.65, 1], [0, 15]);
+    const videoTime = useTransform(scrollYProgress, [0.65, 1], [-10, 15]);
 
     useEffect(() => {
         videoTime.onChange((v) => {
