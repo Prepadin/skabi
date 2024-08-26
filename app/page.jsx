@@ -94,11 +94,11 @@ export default function page() {
   return (
     <>
       <div className={s.hero}>
-        <Hero />
+        {/* <Hero /> */}
       </div >
-      <Gallery />
+      {/* <Gallery /> */}
       <div >
-        <Velocity />
+        {/* <Velocity /> */}
         <div style={{ height: "50vh" }}></div>
       </div >
       <div >
@@ -131,7 +131,7 @@ export default function page() {
         <Ball />
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
       {/* <main ref={container} className="relative h-[400vh]">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
