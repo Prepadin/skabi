@@ -98,7 +98,7 @@ export default function page() {
       </div >
       {/* <Gallery /> */}
       <div >
-        {/* <Velocity /> */}
+        <Velocity />
         <div style={{ height: "50vh" }}></div>
       </div >
       <div >
