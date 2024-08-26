@@ -96,7 +96,7 @@ export default function page() {
       <div className={s.hero}>
         {/* <Hero /> */}
       </div >
-      <Gallery />
+      {/* <Gallery /> */}
       <div >
         <Velocity />
         <div style={{ height: "50vh" }}></div>
