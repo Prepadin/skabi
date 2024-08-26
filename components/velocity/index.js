@@ -58,7 +58,7 @@ function ParallaxText({ children, baseVelocity = 200 }) {
      */
     return (
         <div className={s.parallax}>
-            <motion.div className=" xl:text-9xl text-5xl  font-semibold uppercase  font-serif  text-[#808080]" style={{ x }} >
+            <motion.div className=" xl:text-9xl text-5xl w-max  font-semibold uppercase  font-serif  text-[#808080]" style={{ x }} >
                 <span >{children} </span>
                 {/* <span>{children} </span>
                 <span>{children} </span>
