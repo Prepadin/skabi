@@ -4,8 +4,10 @@ import dynamic from 'next/dynamic'
 import s from "./page.module.scss"
 import Character from "components/character";
 import Scrollvideo from "components/scrollvideo";
+import Ball from "components/BallAnimation";
 import Footer from "components/footer";
 import Velocity from "components/velocity";
+
 import { HorizontalScrollll } from "components/HorizontalScrollll";
 import { useRef, useEffect as UseEffect } from 'react';
 import gsap from 'gsap';
@@ -92,7 +94,7 @@ export default function page() {
   return (
     <>
       <div className={s.hero}>
-        {/* <Hero /> */}
+        <Hero />
       </div >
       <Gallery />
       <div >
@@ -114,18 +116,20 @@ export default function page() {
 
       {/* <Paragraph value={paragraph}/> */}
       {/* <Word value={paragraph} /> */}
-      <Character value={paragraph} />
+      {/* <Character value={paragraph} /> */}
 
 
       <div style={{ height: "45vh" }}></div>
       {/* <HorizontalScroll /> */}
       {/* <div style={{ height: "5vh" }}></div> */}
-      <HorizontalScrollll />
+      {/* <HorizontalScrollll /> */}
       <div style={{ height: "100vh" }}></div>
       {/* <HorizontalScrolll /> */}
       {/* <div style={{ height: "20vh" }}></div> */}
       <div>
-        <Scrollvideo />
+        {/* <Scrollvideo /> */}
+        <Ball />
+
       </div>
       <Footer />
       {/* <main ref={container} className="relative h-[400vh]">
