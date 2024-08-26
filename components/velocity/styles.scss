@@ -139,12 +139,12 @@
 //     position: absolute;
 // }
 
-// .section {
-//     padding-top: 20vh;
-//     padding-bottom: 35vh;
-//     position: relative;
+.section {
+    padding-top: 20vh;
+    padding-bottom: 35vh;
+    position: relative;
 
-// }
+}
 
 // img {
 //     position: absolute;
@@ -165,15 +165,15 @@
 //     bottom: 100px;
 // }
 
-// .parallax {
-//     overflow: hidden;
-//     letter-spacing: -2px;
-//     line-height: 0.8;
-//     margin: 0;
-//     white-space: nowrap;
-//     display: flex;
-//     flex-wrap: nowrap;
-// }
+.parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 // .parallax .scroller {
 //     font-weight: 600;

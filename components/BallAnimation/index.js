@@ -1,7 +1,10 @@
+'use client'
+
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import s from "./styles.scss"
+import { useFrame, useThree } from "@react-three/fiber";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +14,7 @@ const BallAnimation = () => {
     const frameCount = 299;
     const images = useRef([]);
     const ball = useRef({ frame: 0 });
+
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -76,11 +80,20 @@ const BallAnimation = () => {
         };
     }, []);
 
+    // const { viewport } = useThree();
+    // const ballScalingFactor = Math.max(window.innerWidth / 1300, 0.5);
+    // console.log(ballScalingFactor)
+
+
+
+
     return (
-        <div>
-            <canvas className={s.canvas} ref={canvasRef}></canvas>
-            {/* <div className="ball-text">Ball Animation Text</div> */}
-        </div>
+        <group className="flex">
+            <div >
+                <canvas className={s.canvas} ref={canvasRef}></canvas>
+                {/* <div className="ball-text">Ball Animation Text</div> */}
+            </div>
+        </group>
     );
 };
 
