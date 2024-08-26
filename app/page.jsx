@@ -116,7 +116,7 @@ export default function page() {
 
       {/* <Paragraph value={paragraph}/> */}
       {/* <Word value={paragraph} /> */}
-      {/* <Character value={paragraph} /> */}
+      <Character value={paragraph} />
 
 
       <div style={{ height: "45vh" }}></div>
@@ -131,7 +131,7 @@ export default function page() {
         <Ball />
 
       </div>
-      {/* <Footer /> */}
+      <Footer />
       {/* <main ref={container} className="relative h-[400vh]">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
