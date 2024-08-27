@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const BallAnimation = () => {
     const canvasRef = useRef(null);
     const contextRef = useRef(null);
-    const frameCount = 299;
+    const frameCount = 269;
     const images = useRef([]);
     const ball = useRef({ frame: 0 });
 

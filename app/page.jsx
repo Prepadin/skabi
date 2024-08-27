@@ -128,7 +128,7 @@ export default function page() {
       {/* <div style={{ height: "20vh" }}></div> */}
       <div>
         {/* <Scrollvideo /> */}
-        {/* <Ball /> */}
+        <Ball />
 
       </div>
       <Footer />
