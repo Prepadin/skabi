@@ -2,12 +2,12 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Image from 'next/image'
-import ska from 'public/images/skabrijel-old.jpg'
-import tour from 'public/images/voj-skab.jpg'
-import poh from 'public/images/skaba.jpg'
-import hri from 'public/images/skab-hri.jpg'
-import leta from 'public/images/skab-letal2.jpg'
-import voj from 'public/images/skab-voj-tu.jpg'
+import ska from 'public/imge/skabrijel-old.jpg'
+import tour from 'public/imge/voj-skab.jpg'
+import poh from 'public/imge/skaba.jpg'
+import hri from 'public/imge/skab-hri.jpg'
+import leta from 'public/imge/skab-letal2.jpg'
+import voj from 'public/imge/skab-voj-tu.jpg'
 
 const HorizontalScrollll = () => {
     return (
