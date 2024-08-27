@@ -94,11 +94,11 @@ export default function page() {
   return (
     <>
       <div className={s.hero}>
-        <Hero />
+        {/* <Hero /> */}
       </div >
-      <Gallery />
+      {/* <Gallery /> */}
       <div >
-        <Velocity />
+        {/* <Velocity /> */}
         <div style={{ height: "50vh" }}></div>
       </div >
       <div >
