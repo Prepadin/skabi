@@ -88,12 +88,12 @@ const BallAnimation = () => {
 
 
     return (
-        <group className="flex">
-            <div >
-                <canvas className={s.canvas} ref={canvasRef}></canvas>
-                {/* <div className="ball-text">Ball Animation Text</div> */}
-            </div>
-        </group>
+
+        <div  >
+            <canvas className={s.canvas} ref={canvasRef}></canvas>
+            {/* <div className="ball-text">Ball Animation Text</div> */}
+        </div>
+
     );
 };
 
