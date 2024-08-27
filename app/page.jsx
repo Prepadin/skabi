@@ -94,11 +94,11 @@ export default function page() {
   return (
     <>
       <div className={s.hero}>
-        {/* <Hero /> */}
+        <Hero />
       </div >
-      {/* <Gallery /> */}
+      <Gallery />
       <div >
-        {/* <Velocity /> */}
+        <Velocity />
         <div style={{ height: "50vh" }}></div>
       </div >
       <div >
@@ -127,8 +127,8 @@ export default function page() {
       {/* <HorizontalScrolll /> */}
       {/* <div style={{ height: "20vh" }}></div> */}
       <div>
-        <Scrollvideo />
-        {/* <Ball /> */}
+        {/* <Scrollvideo /> */}
+        <Ball />
 
       </div>
       <Footer />

@@ -89,7 +89,7 @@ const BallAnimation = () => {
 
     return (
 
-        <div className={s.canvas}>
+        <div style={{ height: "300vh", background: "#ffffff" }}>
             <canvas ref={canvasRef}></canvas>
             {/* <div className="ball-text">Ball Animation Text</div> */}
         </div>
