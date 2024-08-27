@@ -94,7 +94,7 @@ export default function page() {
   return (
     <>
       <div className={s.hero}>
-        <Hero />
+        {/* <Hero /> */}
       </div >
       {/* <Gallery /> */}
       <div >
