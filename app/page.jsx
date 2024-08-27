@@ -15,9 +15,9 @@ import { ScrollTrigger } from 'gsap/all';
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Lenis from 'lenis';
-import Pic1 from 'public/images/skab-letal.jpg'
-import Pic2 from 'public/images/skab-voj-tu.jpg'
-import Pic3 from 'public/images/skaba.jpg'
+// import Pic1 from 'public/images/skab-letal.jpg'
+// import Pic2 from 'public/images/skab-voj-tu.jpg'
+// import Pic3 from 'public/images/skaba.jpg'
 
 const Gallery = dynamic(() => import('/components/parallaxgallery'), {
   ssr: false
@@ -142,62 +142,62 @@ export default function page() {
 
 }
 
-const Section1 = ({ scrollYProgress }) => {
+// const Section1 = ({ scrollYProgress }) => {
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
-  return (
-    <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-[#C72626] text-[3.5vw] flex flex-col items-center justify-center text-white pb-[10vh]">
-      <p>Scroll Perspective</p>
-      <div className="flex gap-4">
-        <p>Section</p>
-        <div className="relative w-[12.5vw]">
-          <Image
-            src={Pic1}
-            alt="img"
-            placeholder="blur"
-            fill
-          />
-        </div>
-        <p>Transition</p>
-      </div>
-    </motion.div>
-  )
-}
+//   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+//   const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
+//   return (
+//     <motion.div style={{ scale, rotate }} className="sticky top-0 h-screen bg-[#C72626] text-[3.5vw] flex flex-col items-center justify-center text-white pb-[10vh]">
+//       <p>Scroll Perspective</p>
+//       <div className="flex gap-4">
+//         <p>Section</p>
+//         <div className="relative w-[12.5vw]">
+//           <Image
+//             src={Pic1}
+//             alt="img"
+//             placeholder="blur"
+//             fill
+//           />
+//         </div>
+//         <p>Transition</p>
+//       </div>
+//     </motion.div>
+//   )
+// }
 
-const Section2 = ({ scrollYProgress }) => {
+// const Section2 = ({ scrollYProgress }) => {
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [5, 0])
+//   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+//   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0])
 
-  return (
-    <>
-      <motion.div style={{ scale, rotate }} className="relative h-screen">
-        <Image
-          src={Pic2}
-          alt="img"
-          placeholder="blur"
-          fill
-        />
-      </motion.div>
+//   return (
+//     <>
+//       <motion.div style={{ scale, rotate }} className="relative h-screen">
+//         <Image
+//           src={Pic2}
+//           alt="img"
+//           placeholder="blur"
+//           fill
+//         />
+//       </motion.div>
 
-    </>
-  )
-}
+//     </>
+//   )
+// }
 
-const Section3 = ({ scrollYProgress }) => {
+// const Section3 = ({ scrollYProgress }) => {
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
+//   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+//   const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
 
-  return (
-    <motion.div style={{ scale, rotate }} className="relative h-screen">
-      <Image
-        src={Pic3}
-        alt="img"
-        placeholder="blur"
-        fill
-      />
-    </motion.div>
-  )
-}
+//   return (
+//     <motion.div style={{ scale, rotate }} className="relative h-screen">
+//       <Image
+//         src={Pic3}
+//         alt="img"
+//         placeholder="blur"
+//         fill
+//       />
+//     </motion.div>
+//   )
+// }
