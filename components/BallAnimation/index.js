@@ -45,23 +45,23 @@ const BallAnimation = () => {
             onUpdate: render,
         });
 
-        gsap.fromTo(
-            '.ball-text',
-            {
-                opacity: 0,
-            },
-            {
-                opacity: 1,
-                scrollTrigger: {
-                    scrub: 1,
-                    start: '50%',
-                    end: '60%',
-                },
-                onComplete: () => {
-                    gsap.to('.ball-text', { opacity: 0 });
-                },
-            }
-        );
+        // gsap.fromTo(
+        //     '.ball-text',
+        //     {
+        //         opacity: 0,
+        //     },
+        //     {
+        //         opacity: 1,
+        //         scrollTrigger: {
+        //             scrub: 1,
+        //             start: '50%',
+        //             end: '60%',
+        //         },
+        //         onComplete: () => {
+        //             gsap.to('.ball-text', { opacity: 0 });
+        //         },
+        //     }
+        // );
 
         function render() {
             const context = contextRef.current;
@@ -89,8 +89,8 @@ const BallAnimation = () => {
 
     return (
 
-        <div  >
-            <canvas className={s.canvas} ref={canvasRef}></canvas>
+        <div className={s.canvas}>
+            <canvas ref={canvasRef}></canvas>
             {/* <div className="ball-text">Ball Animation Text</div> */}
         </div>
 
