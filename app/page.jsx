@@ -96,9 +96,9 @@ export default function page() {
       <div className={s.hero}>
         <Hero />
       </div >
-      {/* <Gallery /> */}
+      <Gallery />
       <div >
-        {/* <Velocity /> */}
+        <Velocity />
         <div style={{ height: "50vh" }}></div>
       </div >
       <div >
@@ -114,9 +114,9 @@ export default function page() {
 
 
 
-      {/* <Paragraph value={paragraph}/> */}
+      {/* <Paragraph value={paragraph} /> */}
       {/* <Word value={paragraph} /> */}
-      {/* <Character value={paragraph} /> */}
+      <Character value={paragraph} />
 
 
       <div style={{ height: "45vh" }}></div>
@@ -128,10 +128,10 @@ export default function page() {
       {/* <div style={{ height: "20vh" }}></div> */}
       <div>
         {/* <Scrollvideo /> */}
-        {/* <Ball /> */}
+        <Ball />
 
       </div>
-      {/* <Footer /> */}
+      <Footer />
       {/* <main ref={container} className="relative h-[400vh]">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />

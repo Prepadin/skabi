@@ -84,11 +84,12 @@ export default function Hero() {
 function VideoText(props) {
     const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/skab1.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
     useEffect(() => void video.play(), [video])
-    const { viewport } = useThree();
+    // const { viewport } = useThree();
     const ScalingFactor = Math.max(window.innerWidth / 1300, 0.5);
 
     return (
         <>
+
             <group scale={ScalingFactor}>
                 <Text
                     font="/Inter-Bold.woff"
